@@ -1,0 +1,32 @@
+Question 1 
+1. Create a directory named Unix_test
+mkdir Unix_test
+
+2. Change to Unix_test directory
+cd Unix_test
+
+3. Use a text editor (not cat) to create a text file named file1 in the Unix_test directory, with content
+touch file1
+
+4. Copy file1 to file2
+cp file1 file2
+
+5. List the contents of directory(Unix_test)
+
+
+6. Change the perissions of file1 to allow read and write access from the user, group and public. List the contents of the directory to show the new permissions
+chmod a+rwx file1
+ls -l
+
+7. Delete file1. List the contents of the directory to show theeffect
+rm file1
+ls 
+
+8. Use head to display the top 3 lines of file2
+head -n 3 file2
+
+9. Use cat, grep and wc to count the occurances of "one" in file2
+grep -wc "one" file2
+
+10. Display all the process associated with the current user, split into pages so it does not scroll off the terminal
+ps -u luyanda
